@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;               /* Enables flexbox */
+      flex-wrap: wrap;             /* Wraps items to next line if needed */
+      justify-content: space-around; /* Horizontal alignment */
+      align-items: center;         /* Vertical alignment */
+      height: 100vh;
+      background: #f0f0f0;
+       align-content:space-evenly;
+    }
+
+    .box {
+      flex: 1 1 200px;             /* Grow, shrink, min-width */
+      margin: 10px;
+      padding: 20px;
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      font-size: 200px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+  </div>
+</body>
+</html>
