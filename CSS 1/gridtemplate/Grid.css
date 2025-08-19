@@ -1,0 +1,26 @@
+ body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 20px;
+      background:yellow;
+       h1{text-align: center;}
+
+    }
+    .grid-container {
+      display: grid;
+      
+      
+    }
+
+    .grid-item {
+      background: red;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      font-size: 18px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .grid-item:hover {
+      background:pink;
+    }
