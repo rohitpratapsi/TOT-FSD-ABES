@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .grid-item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.2s ease;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .grid-item h4 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .grid-item p {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/150x180" alt="Smartphones">
+      <h4>Smartphones & basic...</h4>
+      <p>4 viewed</p>
+    </div>
+
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/150x180" alt="Books">
+      <h4>Books</h4>
+      <p>3 viewed</p>
+    </div>
+
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/150x180" alt="Baby carriers">
+      <h4>Baby & toddler carriers</h4>
+      <p>2 viewed</p>
+    </div>
+
+    <div class="grid-item">
+      <img src="https://via.placeholder.com/150x180" alt="Cots">
+      <h4>Cots</h4>
+      <p>1 viewed</p>
+
+    </div>
+    <div class="box3">Box 3</div>
+    <div class="box4">Box 4</div>
+  </div>
+</body>
+</html>

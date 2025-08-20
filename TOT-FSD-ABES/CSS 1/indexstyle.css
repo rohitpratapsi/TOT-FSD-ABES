@@ -1,0 +1,43 @@
+ /* *{
+background-color: dimgray;
+}
+    h1
+{
+    background-color:chocolate;
+}
+p{
+    background-color: aquamarine;
+    color: aquamarine;
+}
+#p1{
+background-color: cadetblue;    
+color:bisque;
+}
+.paragraph{
+    background-color: red;
+color:white;
+front size: xx large;
+} */
+/* div~p{
+    background-color: blue;
+    color: white;
+}
+p:hover{
+    font-size: xx-large;
+    background-color: brown;
+    color:white;
+} */
+p::before{
+    content: "welcome to ABES";
+
+}
+P::after{
+    content:"bhbshbahbhb";
+    background-color:aqua ;
+    font-size: xx-large;
+    font-family:Georgia,'Times new Roman', 'Times New Roman', Times, serif;
+
+}
+p::selection{
+    background-color: chartreuse;
+}
